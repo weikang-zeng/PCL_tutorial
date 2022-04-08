@@ -10,5 +10,5 @@ include_directories(${PCL_INCLUDE_DIRS})   #设置为pcl安装的头文件和依
 link_directories(${PCL_LIBRARY_DIRS})   #设置为已安装的PCL库
 add_definitions(${PCL_DEFINITIONS})     #列出需要预处理器定义和编译器标志
 
-add_executable (NO src/Normal.cpp)    #尝试创建一个名为pcd_write的可执行文件，指定来源是pcd_write.cpp
+add_executable (NO src/fpfh_feature.cpp)    #尝试创建一个名为pcd_write的可执行文件，指定来源是pcd_write.cpp
 target_link_libraries (NO ${PCL_LIBRARIES})  #让连接器知道我们连接的库
